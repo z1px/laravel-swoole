@@ -41,7 +41,7 @@ trait WorkerTicks
                 (is_null($tick['worker_id']) && $max_taskworker_id === $server->worker_id)
                 || (!is_null($tick['worker_id'] && ($tick['worker_id'] < $min_taskworker_id || $tick['worker_id'] > $max_taskworker_id)))
             ) {
-                $server->tick($tick['interval'], $tick['job'], ...$tick['data']);
+                $server->tick($tick['interval'], $tick['job'], $server, ...$tick['data']);
             }
         }
         return true;

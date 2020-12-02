@@ -7,7 +7,7 @@
  * License: Apache 2.0
  */
 
-namespace SwooleTW\Http\Coroutine;
+namespace Z1px\Http\Coroutine;
 
 use Exception;
 use Illuminate\Database\QueryException;
@@ -47,7 +47,7 @@ class PDO extends BasePDO
      * @param string $password
      * @param array $options
      *
-     * @throws \SwooleTW\Http\Coroutine\ConnectionException
+     * @throws \Z1px\Http\Coroutine\ConnectionException
      */
     public function __construct(string $dsn, string $username = '', string $password = '', array $options = [])
     {
@@ -68,7 +68,7 @@ class PDO extends BasePDO
      * @param array $options
      *
      * @return $this
-     * @throws \SwooleTW\Http\Coroutine\ConnectionException
+     * @throws \Z1px\Http\Coroutine\ConnectionException
      */
     protected function connect(array $options = [])
     {
@@ -244,7 +244,7 @@ class PDO extends BasePDO
      * @param string $statement
      * @param array $options
      *
-     * @return bool|\PDOStatement|\SwooleTW\Http\Coroutine\PDOStatement
+     * @return bool|\PDOStatement|\Z1px\Http\Coroutine\PDOStatement
      */
     public function prepare($statement, $options = null)
     {

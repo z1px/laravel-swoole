@@ -1,8 +1,8 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Websocket\Middleware;
+namespace Z1px\Http\Tests\Websocket\Middleware;
 
-use SwooleTW\Http\Tests\TestCase;
+use Z1px\Http\Tests\TestCase;
 
 class StartSessionTest extends TestCase
 {

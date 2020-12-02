@@ -1,20 +1,20 @@
 <?php
 
-namespace SwooleTW\Http\Concerns;
+namespace Z1px\Http\Concerns;
 
 use Throwable;
 use Illuminate\Pipeline\Pipeline;
-use SwooleTW\Http\Server\Sandbox;
-use SwooleTW\Http\Websocket\Parser;
-use SwooleTW\Http\Websocket\Pusher;
-use SwooleTW\Http\Websocket\Websocket;
-use SwooleTW\Http\Transformers\Request;
-use SwooleTW\Http\Server\Facades\Server;
-use SwooleTW\Http\Websocket\HandlerContract;
+use Z1px\Http\Server\Sandbox;
+use Z1px\Http\Websocket\Parser;
+use Z1px\Http\Websocket\Pusher;
+use Z1px\Http\Websocket\Websocket;
+use Z1px\Http\Transformers\Request;
+use Z1px\Http\Server\Facades\Server;
+use Z1px\Http\Websocket\HandlerContract;
 use Illuminate\Contracts\Container\Container;
 use Swoole\WebSocket\Server as WebsocketServer;
-use SwooleTW\Http\Websocket\Rooms\RoomContract;
-use SwooleTW\Http\Exceptions\WebsocketNotSetInConfigException;
+use Z1px\Http\Websocket\Rooms\RoomContract;
+use Z1px\Http\Exceptions\WebsocketNotSetInConfigException;
 
 /**
  * Trait InteractsWithWebsocket
@@ -31,17 +31,17 @@ trait InteractsWithWebsocket
     protected $isServerWebsocket = false;
 
     /**
-     * @var \SwooleTW\Http\Websocket\HandlerContract
+     * @var \Z1px\Http\Websocket\HandlerContract
      */
     protected $websocketHandler;
 
     /**
-     * @var \SwooleTW\Http\Websocket\Parser
+     * @var \Z1px\Http\Websocket\Parser
      */
     protected $payloadParser;
 
     /**
-     * @var \SwooleTW\Http\Websocket\Rooms\RoomContract
+     * @var \Z1px\Http\Websocket\Rooms\RoomContract
      */
     protected $websocketRoom;
 
@@ -214,9 +214,9 @@ trait InteractsWithWebsocket
     /**
      * Set frame parser for websocket.
      *
-     * @param \SwooleTW\Http\Websocket\Parser $payloadParser
+     * @param \Z1px\Http\Websocket\Parser $payloadParser
      *
-     * @return \SwooleTW\Http\Concerns\InteractsWithWebsocket
+     * @return \Z1px\Http\Concerns\InteractsWithWebsocket
      */
     public function setPayloadParser(Parser $payloadParser)
     {
@@ -303,9 +303,9 @@ trait InteractsWithWebsocket
     /**
      * Set websocket handler.
      *
-     * @param \SwooleTW\Http\Websocket\HandlerContract $handler
+     * @param \Z1px\Http\Websocket\HandlerContract $handler
      *
-     * @return \SwooleTW\Http\Concerns\InteractsWithWebsocket
+     * @return \Z1px\Http\Concerns\InteractsWithWebsocket
      */
     public function setWebsocketHandler(HandlerContract $handler)
     {
@@ -317,7 +317,7 @@ trait InteractsWithWebsocket
     /**
      * Get websocket handler.
      *
-     * @return \SwooleTW\Http\Websocket\HandlerContract
+     * @return \Z1px\Http\Websocket\HandlerContract
      */
     public function getWebsocketHandler(): HandlerContract
     {
@@ -328,7 +328,7 @@ trait InteractsWithWebsocket
      * @param string $class
      * @param array $settings
      *
-     * @return \SwooleTW\Http\Websocket\Rooms\RoomContract
+     * @return \Z1px\Http\Websocket\Rooms\RoomContract
      */
     protected function createRoom(string $class, array $settings): RoomContract
     {

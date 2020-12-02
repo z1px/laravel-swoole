@@ -1,10 +1,10 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Server;
+namespace Z1px\Http\Tests\Server;
 
 use Mockery as m;
-use SwooleTW\Http\Tests\TestCase;
-use SwooleTW\Http\Server\PidManager;
+use Z1px\Http\Tests\TestCase;
+use Z1px\Http\Server\PidManager;
 
 class PidManagerTest extends TestCase
 {
@@ -92,6 +92,6 @@ class PidManagerTest extends TestCase
 
     protected function mockMethod($name, \Closure $function, $namespace = null)
     {
-        parent::mockMethod($name, $function, 'SwooleTW\Http\Server');
+        parent::mockMethod($name, $function, 'Z1px\Http\Server');
     }
 }

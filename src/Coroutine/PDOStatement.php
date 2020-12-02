@@ -7,7 +7,7 @@
  * License: Apache 2.0
  */
 
-namespace SwooleTW\Http\Coroutine;
+namespace Z1px\Http\Coroutine;
 
 use PDOStatement as BaseStatement;
 use Swoole\Coroutine\MySQL\Statement;

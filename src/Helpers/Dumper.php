@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Helpers;
+namespace Z1px\Http\Helpers;
 
 use Symfony\Component\VarDumper\Cloner\VarCloner;
 use Symfony\Component\VarDumper\Dumper\CliDumper;

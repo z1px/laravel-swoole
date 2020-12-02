@@ -1,31 +1,31 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Server;
+namespace Z1px\Http\Tests\Server;
 
 use Mockery as m;
 use Swoole\Table;
 use Swoole\Http\Request;
 use Swoole\Http\Response;
-use SwooleTW\Http\Server\Manager;
-use SwooleTW\Http\Server\Sandbox;
-use SwooleTW\Http\Tests\TestCase;
+use Z1px\Http\Server\Manager;
+use Z1px\Http\Server\Sandbox;
+use Z1px\Http\Tests\TestCase;
 use Illuminate\Container\Container;
-use SwooleTW\Http\Websocket\HandShakeHandler;
-use SwooleTW\Http\Websocket\Parser;
-use SwooleTW\Http\Server\PidManager;
-use SwooleTW\Http\Table\SwooleTable;
+use Z1px\Http\Websocket\HandShakeHandler;
+use Z1px\Http\Websocket\Parser;
+use Z1px\Http\Server\PidManager;
+use Z1px\Http\Table\SwooleTable;
 use Laravel\Lumen\Exceptions\Handler;
 use Illuminate\Support\Facades\Config;
-use SwooleTW\Http\Websocket\Websocket;
-use SwooleTW\Http\Server\Facades\Server;
-use SwooleTW\Http\Websocket\HandlerContract;
-use SwooleTW\Http\Websocket\Rooms\TableRoom;
-use SwooleTW\Http\Websocket\Rooms\RoomContract;
+use Z1px\Http\Websocket\Websocket;
+use Z1px\Http\Server\Facades\Server;
+use Z1px\Http\Websocket\HandlerContract;
+use Z1px\Http\Websocket\Rooms\TableRoom;
+use Z1px\Http\Websocket\Rooms\RoomContract;
 use Illuminate\Contracts\Debug\ExceptionHandler;
-use SwooleTW\Http\Websocket\SocketIO\SocketIOParser;
-use SwooleTW\Http\Websocket\SocketIO\WebsocketHandler;
+use Z1px\Http\Websocket\SocketIO\SocketIOParser;
+use Z1px\Http\Websocket\SocketIO\WebsocketHandler;
 use Illuminate\Contracts\Config\Repository as ConfigContract;
-use SwooleTW\Http\Websocket\Facades\Websocket as WebsocketFacade;
+use Z1px\Http\Websocket\Facades\Websocket as WebsocketFacade;
 
 class ManagerTest extends TestCase
 {
@@ -711,6 +711,6 @@ class ManagerTest extends TestCase
 
     protected function mockMethod($name, \Closure $function, $namespace = null)
     {
-        parent::mockMethod($name, $function, 'SwooleTW\Http\Server');
+        parent::mockMethod($name, $function, 'Z1px\Http\Server');
     }
 }

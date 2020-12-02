@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Transformers;
+namespace Z1px\Http\Transformers;
 
 use Symfony\Component\HttpFoundation\StreamedResponse as BaseStreamedResponse;
 

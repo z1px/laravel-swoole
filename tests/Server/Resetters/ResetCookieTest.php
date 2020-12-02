@@ -1,13 +1,13 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Server\Resetters;
+namespace Z1px\Http\Tests\Server\Resetters;
 
 use Mockery as m;
-use SwooleTW\Http\Tests\TestCase;
-use SwooleTW\Http\Server\Sandbox;
+use Z1px\Http\Tests\TestCase;
+use Z1px\Http\Server\Sandbox;
 use Illuminate\Container\Container;
 use Symfony\Component\HttpFoundation\Cookie;
-use SwooleTW\Http\Server\Resetters\ResetCookie;
+use Z1px\Http\Server\Resetters\ResetCookie;
 
 class ResetCookieTest extends TestCase
 {

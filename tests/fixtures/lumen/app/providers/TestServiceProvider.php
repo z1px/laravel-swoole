@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Fixtures\Lumen\App\Providers;
+namespace Z1px\Http\Tests\Fixtures\Lumen\App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

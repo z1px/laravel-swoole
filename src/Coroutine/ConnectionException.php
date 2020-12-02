@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Coroutine;
+namespace Z1px\Http\Coroutine;
 
 class ConnectionException extends \Exception
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Helpers;
+namespace Z1px\Http\Tests\Helpers;
 
-use SwooleTW\Http\Helpers\MimeType;
+use Z1px\Http\Helpers\MimeType;
 use PHPUnit\Framework\TestCase;
 
 class MimeTypeTest extends TestCase

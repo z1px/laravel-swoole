@@ -1,10 +1,10 @@
 <?php
 
-namespace SwooleTW\Http;
+namespace Z1px\Http;
 
-use SwooleTW\Http\Server\Manager;
+use Z1px\Http\Server\Manager;
 use Illuminate\Contracts\Http\Kernel;
-use SwooleTW\Http\Middleware\AccessLog;
+use Z1px\Http\Middleware\AccessLog;
 
 /**
  * @codeCoverageIgnore

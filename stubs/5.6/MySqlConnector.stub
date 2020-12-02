@@ -1,10 +1,10 @@
 <?php
 
-namespace SwooleTW\Http\Coroutine\Connectors;
+namespace Z1px\Http\Coroutine\Connectors;
 
 use Illuminate\Database\Connectors\MySqlConnector as BaseConnector;
 use Illuminate\Support\Str;
-use SwooleTW\Http\Coroutine\PDO as SwoolePDO;
+use Z1px\Http\Coroutine\PDO as SwoolePDO;
 use Throwable;
 
 /**
@@ -21,7 +21,7 @@ class MySqlConnector extends BaseConnector
      * @param array $options
      *
      * @return \PDO
-     * @throws \SwooleTW\Http\Coroutine\ConnectionException
+     * @throws \Z1px\Http\Coroutine\ConnectionException
      */
     protected function createPdoConnection($dsn, $username, $password, $options)
     {

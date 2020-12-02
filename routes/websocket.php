@@ -2,7 +2,7 @@
 
 
 use Illuminate\Http\Request;
-use SwooleTW\Http\Websocket\Facades\Websocket;
+use Z1px\Http\Websocket\Facades\Websocket;
 
 /*
 |--------------------------------------------------------------------------

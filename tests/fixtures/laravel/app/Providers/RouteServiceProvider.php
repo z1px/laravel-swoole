@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Fixtures\Laravel\App\Providers;
+namespace Z1px\Http\Tests\Fixtures\Laravel\App\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 

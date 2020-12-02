@@ -1,13 +1,13 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Server\Resetters;
+namespace Z1px\Http\Tests\Server\Resetters;
 
 use Mockery as m;
-use SwooleTW\Http\Tests\TestCase;
-use SwooleTW\Http\Server\Sandbox;
+use Z1px\Http\Tests\TestCase;
+use Z1px\Http\Server\Sandbox;
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Http\Kernel;
-use SwooleTW\Http\Server\Resetters\RebindKernelContainer;
+use Z1px\Http\Server\Resetters\RebindKernelContainer;
 
 class RebindKernelContainerTest extends TestCase
 {

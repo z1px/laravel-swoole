@@ -1,11 +1,11 @@
 <?php
 
-namespace SwooleTW\Http\Helpers;
+namespace Z1px\Http\Helpers;
 
 /**
  * Class MimeType
  *
- * @package SwooleTW\Http\Helpers
+ * @package Z1px\Http\Helpers
  */
 class MimeType
 {

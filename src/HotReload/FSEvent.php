@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\HotReload;
+namespace Z1px\Http\HotReload;
 
 use Illuminate\Support\Arr;
 use Carbon\Carbon;

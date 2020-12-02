@@ -1,13 +1,13 @@
 <?php
 
-namespace SwooleTW\Http\Tests;
+namespace Z1px\Http\Tests;
 
 use Illuminate\Support\Facades\Facade;
 use Mockery as m;
 use phpmock\Mock;
 use phpmock\MockBuilder;
 use PHPUnit\Framework\TestCase as BaseTestCase;
-use SwooleTW\Http\Coroutine\Context;
+use Z1px\Http\Coroutine\Context;
 
 class TestCase extends BaseTestCase
 {

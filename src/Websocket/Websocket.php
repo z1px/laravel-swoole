@@ -1,15 +1,15 @@
 <?php
 
-namespace SwooleTW\Http\Websocket;
+namespace Z1px\Http\Websocket;
 
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Contracts\Pipeline\Pipeline as PipelineContract;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;
 use InvalidArgumentException;
-use SwooleTW\Http\Server\Facades\Server;
-use SwooleTW\Http\Server\Manager;
-use SwooleTW\Http\Websocket\Rooms\RoomContract;
+use Z1px\Http\Server\Facades\Server;
+use Z1px\Http\Server\Manager;
+use Z1px\Http\Websocket\Rooms\RoomContract;
 
 /**
  * Class Websocket
@@ -67,7 +67,7 @@ class Websocket
     /**
      * Room adapter.
      *
-     * @var \SwooleTW\Http\Websocket\Rooms\RoomContract
+     * @var \Z1px\Http\Websocket\Rooms\RoomContract
      */
     protected $room;
 
@@ -81,7 +81,7 @@ class Websocket
     /**
      * Websocket constructor.
      *
-     * @param \SwooleTW\Http\Websocket\Rooms\RoomContract $room
+     * @param \Z1px\Http\Websocket\Rooms\RoomContract $room
      * @param \Illuminate\Contracts\Pipeline\Pipeline $pipeline
      */
     public function __construct(RoomContract $room, PipelineContract $pipeline)
@@ -374,7 +374,7 @@ class Websocket
      *
      * @param array|string|null $middleware
      *
-     * @return array|\SwooleTW\Http\Websocket\Websocket
+     * @return array|\Z1px\Http\Websocket\Websocket
      */
     public function middleware($middleware = null)
     {

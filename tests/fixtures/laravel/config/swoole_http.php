@@ -20,6 +20,6 @@ return [
         ],
     ],
     'providers' => [
-        SwooleTW\Http\Tests\Fixtures\Laravel\App\Providers\TestServiceProvider::class,
+        Z1px\Http\Tests\Fixtures\Laravel\App\Providers\TestServiceProvider::class,
     ],
 ];

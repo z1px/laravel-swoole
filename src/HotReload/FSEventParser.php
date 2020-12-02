@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\HotReload;
+namespace Z1px\Http\HotReload;
 
 use Carbon\Carbon;
 
@@ -18,7 +18,7 @@ class FSEventParser
     /**
      * @param string $event
      *
-     * @return \SwooleTW\Http\HotReload\FSEvent
+     * @return \Z1px\Http\HotReload\FSEvent
      */
     public static function toEvent(string $event): ?FSEvent
     {

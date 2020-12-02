@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Websocket\Middleware;
+namespace Z1px\Http\Websocket\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Session\Session;

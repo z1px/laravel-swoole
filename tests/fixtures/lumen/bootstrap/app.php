@@ -14,8 +14,8 @@ $app->singleton(
     Illuminate\Foundation\Console\Kernel::class
 );
 
-$app->register(SwooleTW\Http\LumenServiceProvider::class);
-$app->register(SwooleTW\Http\Tests\Fixtures\Lumen\App\Providers\TestServiceProvider::class);
+$app->register(Z1px\Http\LumenServiceProvider::class);
+$app->register(Z1px\Http\Tests\Fixtures\Lumen\App\Providers\TestServiceProvider::class);
 
 $app->configure('swoole_http');
 

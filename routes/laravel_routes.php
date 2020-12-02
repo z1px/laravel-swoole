@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['namespace' => 'SwooleTW\Http\Controllers'], function () {
+Route::group(['namespace' => 'Z1px\Http\Controllers'], function () {
     Route::get('socket.io', 'SocketIOController@upgrade');
     Route::post('socket.io', 'SocketIOController@reject');
 });

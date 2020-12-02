@@ -1,11 +1,11 @@
 <?php
 
-namespace SwooleTW\Http\Concerns;
+namespace Z1px\Http\Concerns;
 
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Container\Container;
-use SwooleTW\Http\Exceptions\SandboxException;
-use SwooleTW\Http\Server\Resetters\ResetterContract;
+use Z1px\Http\Exceptions\SandboxException;
+use Z1px\Http\Server\Resetters\ResetterContract;
 
 trait ResetApplication
 {
@@ -20,7 +20,7 @@ trait ResetApplication
     protected $providers = [];
 
     /**
-     * @var \SwooleTW\Http\Server\Resetters\ResetterContract[]|array
+     * @var \Z1px\Http\Server\Resetters\ResetterContract[]|array
      */
     protected $resetters = [];
 

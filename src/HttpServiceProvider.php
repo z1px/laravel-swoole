@@ -1,19 +1,19 @@
 <?php
 
-namespace SwooleTW\Http;
+namespace Z1px\Http;
 
-use SwooleTW\Http\Helpers\FW;
+use Z1px\Http\Helpers\FW;
 use Illuminate\Queue\QueueManager;
-use SwooleTW\Http\Server\PidManager;
+use Z1px\Http\Server\PidManager;
 use Swoole\Http\Server as HttpServer;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\DatabaseManager;
-use SwooleTW\Http\Server\Facades\Server;
-use SwooleTW\Http\Coroutine\MySqlConnection;
-use SwooleTW\Http\Commands\HttpServerCommand;
+use Z1px\Http\Server\Facades\Server;
+use Z1px\Http\Coroutine\MySqlConnection;
+use Z1px\Http\Commands\HttpServerCommand;
 use Swoole\Websocket\Server as WebsocketServer;
-use SwooleTW\Http\Task\Connectors\SwooleTaskConnector;
-use SwooleTW\Http\Coroutine\Connectors\ConnectorFactory;
+use Z1px\Http\Task\Connectors\SwooleTaskConnector;
+use Z1px\Http\Coroutine\Connectors\ConnectorFactory;
 
 /**
  * @codeCoverageIgnore

@@ -1,11 +1,11 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Table;
+namespace Z1px\Http\Tests\Table;
 
 use Mockery as m;
 use Swoole\Table;
-use SwooleTW\Http\Table\SwooleTable;
-use SwooleTW\Http\Tests\TestCase;
+use Z1px\Http\Table\SwooleTable;
+use Z1px\Http\Tests\TestCase;
 
 class TableTest extends TestCase
 {

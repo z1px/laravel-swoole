@@ -1,13 +1,13 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Server\Resetters;
+namespace Z1px\Http\Tests\Server\Resetters;
 
 use Mockery as m;
-use SwooleTW\Http\Tests\TestCase;
-use SwooleTW\Http\Server\Sandbox;
+use Z1px\Http\Tests\TestCase;
+use Z1px\Http\Server\Sandbox;
 use Illuminate\Container\Container;
 use Illuminate\Support\ServiceProvider;
-use SwooleTW\Http\Server\Resetters\ResetProviders;
+use Z1px\Http\Server\Resetters\ResetProviders;
 
 class ResetProvidersTest extends TestCase
 {
@@ -26,7 +26,7 @@ class ResetProvidersTest extends TestCase
 
         $this->mockMethod('method_exists', function () {
             return true;
-        }, 'SwooleTW\Http\Server\Resetters');
+        }, 'Z1px\Http\Server\Resetters');
 
         $container = new Container;
         $resetter = new ResetProviders;

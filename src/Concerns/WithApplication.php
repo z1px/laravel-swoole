@@ -1,11 +1,11 @@
 <?php
 
-namespace SwooleTW\Http\Concerns;
+namespace Z1px\Http\Concerns;
 
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Contracts\Container\Container;
-use SwooleTW\Http\Exceptions\FrameworkNotSupportException;
+use Z1px\Http\Exceptions\FrameworkNotSupportException;
 
 /**
  * Trait WithApplication

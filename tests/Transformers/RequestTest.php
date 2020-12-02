@@ -1,12 +1,12 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Transformers;
+namespace Z1px\Http\Tests\Transformers;
 
 use Illuminate\Http\Request as IlluminateRequest;
 use Mockery as m;
 use Swoole\Http\Request as SwooleRequest;
-use SwooleTW\Http\Tests\TestCase;
-use SwooleTW\Http\Transformers\Request;
+use Z1px\Http\Tests\TestCase;
+use Z1px\Http\Transformers\Request;
 
 class RequestTest extends TestCase
 {
@@ -84,7 +84,7 @@ class RequestTest extends TestCase
 
     protected function mockMethod($name, \Closure $function, $namespace = null)
     {
-        parent::mockMethod($name, $function, 'SwooleTW\Http\Transformers');
+        parent::mockMethod($name, $function, 'Z1px\Http\Transformers');
     }
 }
 

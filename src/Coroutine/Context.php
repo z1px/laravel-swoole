@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Coroutine;
+namespace Z1px\Http\Coroutine;
 
 use Illuminate\Contracts\Container\Container;
 use Swoole\Coroutine;

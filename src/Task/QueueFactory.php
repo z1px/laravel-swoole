@@ -1,10 +1,10 @@
 <?php
 
-namespace SwooleTW\Http\Task;
+namespace Z1px\Http\Task;
 
 use Illuminate\Support\Arr;
-use SwooleTW\Http\Helpers\FW;
-use SwooleTW\Http\Task\SwooleTaskQueue;
+use Z1px\Http\Helpers\FW;
+use Z1px\Http\Task\SwooleTaskQueue;
 
 /**
  * Class QueueFactory
@@ -23,7 +23,7 @@ class QueueFactory
      *
      * @const string
      */
-    public const QUEUE_CLASS = 'SwooleTW\Http\Task\SwooleTaskQueue';
+    public const QUEUE_CLASS = 'Z1px\Http\Task\SwooleTaskQueue';
 
     /**
      * Swoole task queue path
@@ -36,7 +36,7 @@ class QueueFactory
      * @param \Swoole\Http\Server $server
      * @param string $version
      *
-     * @return \SwooleTW\Http\Task\SwooleTaskQueue
+     * @return \Z1px\Http\Task\SwooleTaskQueue
      */
     public static function make($server, string $version): SwooleTaskQueue
     {

@@ -1,12 +1,12 @@
 <?php
 
-namespace SwooleTW\Http\Tests\SocketIO;
+namespace Z1px\Http\Tests\SocketIO;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use Mockery as m;
-use SwooleTW\Http\Controllers\SocketIOController;
-use SwooleTW\Http\Tests\TestCase;
+use Z1px\Http\Controllers\SocketIOController;
+use Z1px\Http\Tests\TestCase;
 
 class SocketIOControllerTest extends TestCase
 {
@@ -115,6 +115,6 @@ class SocketIOControllerTest extends TestCase
 
     protected function mockMethod($name, \Closure $function, $namespace = null)
     {
-        parent::mockMethod($name, $function, 'SwooleTW\Http\Controllers');
+        parent::mockMethod($name, $function, 'Z1px\Http\Controllers');
     }
 }

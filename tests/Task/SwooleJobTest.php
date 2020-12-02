@@ -1,11 +1,11 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Task;
+namespace Z1px\Http\Tests\Task;
 
 use Illuminate\Container\Container;
 use Mockery as m;
-use SwooleTW\Http\Task\SwooleTaskJob;
-use SwooleTW\Http\Tests\TestCase;
+use Z1px\Http\Task\SwooleTaskJob;
+use Z1px\Http\Tests\TestCase;
 
 class SwooleJobTest extends TestCase
 {

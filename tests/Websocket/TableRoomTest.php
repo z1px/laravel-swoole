@@ -1,11 +1,11 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Websocket;
+namespace Z1px\Http\Tests\Websocket;
 
 use Swoole\Table;
-use SwooleTW\Http\Tests\TestCase;
-use SwooleTW\Http\Websocket\Rooms\RoomContract;
-use SwooleTW\Http\Websocket\Rooms\TableRoom;
+use Z1px\Http\Tests\TestCase;
+use Z1px\Http\Websocket\Rooms\RoomContract;
+use Z1px\Http\Websocket\Rooms\TableRoom;
 
 class TableRoomTest extends TestCase
 {

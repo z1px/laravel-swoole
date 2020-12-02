@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Table;
+namespace Z1px\Http\Table;
 
 use Swoole\Table;
 
@@ -19,7 +19,7 @@ class SwooleTable
      * @param string $name
      * @param \Swoole\Table $table
      *
-     * @return \SwooleTW\Http\Table\SwooleTable
+     * @return \Z1px\Http\Table\SwooleTable
      */
     public function add(string $name, Table $table)
     {

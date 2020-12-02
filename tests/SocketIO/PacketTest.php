@@ -1,9 +1,9 @@
 <?php
 
-namespace SwooleTW\Http\Tests\SocketIO;
+namespace Z1px\Http\Tests\SocketIO;
 
-use SwooleTW\Http\Tests\TestCase;
-use SwooleTW\Http\Websocket\SocketIO\Packet;
+use Z1px\Http\Tests\TestCase;
+use Z1px\Http\Websocket\SocketIO\Packet;
 
 class PacketTest extends TestCase
 {

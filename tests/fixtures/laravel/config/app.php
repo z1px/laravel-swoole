@@ -27,9 +27,9 @@ return [
     'providers' => [
 
         Illuminate\Filesystem\FilesystemServiceProvider::class,
-        SwooleTW\Http\LaravelServiceProvider::class,
-        SwooleTW\Http\Tests\Fixtures\Laravel\App\Providers\RouteServiceProvider::class,
-        SwooleTW\Http\Tests\Fixtures\Laravel\App\Providers\TestServiceProvider::class,
+        Z1px\Http\LaravelServiceProvider::class,
+        Z1px\Http\Tests\Fixtures\Laravel\App\Providers\RouteServiceProvider::class,
+        Z1px\Http\Tests\Fixtures\Laravel\App\Providers\TestServiceProvider::class,
 
     ],
 

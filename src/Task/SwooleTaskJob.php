@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Task;
+namespace Z1px\Http\Task;
 
 use Illuminate\Queue\Jobs\Job;
 use Illuminate\Contracts\Container\Container;

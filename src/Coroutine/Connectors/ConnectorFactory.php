@@ -1,9 +1,9 @@
 <?php
 
-namespace SwooleTW\Http\Coroutine\Connectors;
+namespace Z1px\Http\Coroutine\Connectors;
 
 use Illuminate\Support\Arr;
-use SwooleTW\Http\Helpers\FW;
+use Z1px\Http\Helpers\FW;
 
 /**
  * Class ConnectorFactory
@@ -22,7 +22,7 @@ class ConnectorFactory
      *
      * @const string
      */
-    public const CONNECTOR_CLASS = 'SwooleTW\Http\Coroutine\Connectors\MySqlConnector';
+    public const CONNECTOR_CLASS = 'Z1px\Http\Coroutine\Connectors\MySqlConnector';
 
     /**
      * Swoole connector path
@@ -34,7 +34,7 @@ class ConnectorFactory
     /**
      * @param string $version
      *
-     * @return \SwooleTW\Http\Coroutine\Connectors\MySqlConnector
+     * @return \Z1px\Http\Coroutine\Connectors\MySqlConnector
      */
     public static function make(string $version): MySqlConnector
     {

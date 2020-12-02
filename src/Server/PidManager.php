@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Server;
+namespace Z1px\Http\Server;
 
 class PidManager
 {

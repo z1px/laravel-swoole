@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Websocket;
+namespace Z1px\Http\Websocket;
 
 use Illuminate\Http\Request;
 use Swoole\Websocket\Frame;

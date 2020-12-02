@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Exceptions;
+namespace Z1px\Http\Exceptions;
 
 /**
  * Class FrameworkNotSupportException

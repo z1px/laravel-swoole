@@ -1,10 +1,10 @@
 <?php
 
-namespace SwooleTW\Http\Tests\HotReload;
+namespace Z1px\Http\Tests\HotReload;
 
-use SwooleTW\Http\HotReload\FSEventParser;
-use SwooleTW\Http\HotReload\FSOutput;
-use SwooleTW\Http\Tests\TestCase;
+use Z1px\Http\HotReload\FSEventParser;
+use Z1px\Http\HotReload\FSOutput;
+use Z1px\Http\Tests\TestCase;
 
 /**
  * Class FSOutputTest

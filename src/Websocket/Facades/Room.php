@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Websocket\Facades;
+namespace Z1px\Http\Websocket\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static array getClients($room)
  * @method static array getRooms($fd)
  *
- * @see \SwooleTW\Http\Websocket\Rooms\RoomContract
+ * @see \Z1px\Http\Websocket\Rooms\RoomContract
  */
 class Room extends Facade
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace SwooleTW\Http\Tests\SocketIO;
+namespace Z1px\Http\Tests\SocketIO;
 
 use Illuminate\Support\Facades\App;
 use Mockery as m;
 use Swoole\Websocket\Frame;
-use SwooleTW\Http\Tests\TestCase;
-use SwooleTW\Http\Websocket\SocketIO\SocketIOParser;
-use SwooleTW\Http\Websocket\SocketIO\Strategies\HeartbeatStrategy;
+use Z1px\Http\Tests\TestCase;
+use Z1px\Http\Websocket\SocketIO\SocketIOParser;
+use Z1px\Http\Websocket\SocketIO\Strategies\HeartbeatStrategy;
 
 class ParserTest extends TestCase
 {

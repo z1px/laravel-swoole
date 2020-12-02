@@ -1,13 +1,13 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Server\Resetters;
+namespace Z1px\Http\Tests\Server\Resetters;
 
 use Mockery as m;
 use Illuminate\Http\Request;
-use SwooleTW\Http\Tests\TestCase;
-use SwooleTW\Http\Server\Sandbox;
+use Z1px\Http\Tests\TestCase;
+use Z1px\Http\Server\Sandbox;
 use Illuminate\Container\Container;
-use SwooleTW\Http\Server\Resetters\RebindRouterContainer;
+use Z1px\Http\Server\Resetters\RebindRouterContainer;
 
 class RebindRouterContainerTest extends TestCase
 {
@@ -69,7 +69,7 @@ class RebindRouterContainerTest extends TestCase
 
         $this->mockMethod('property_exists', function () {
             return true;
-        }, 'SwooleTW\Http\Server\Resetters');
+        }, 'Z1px\Http\Server\Resetters');
 
         $resetter = new RebindRouterContainer;
         $app = $resetter->handle($container, $sandbox);

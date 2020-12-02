@@ -1,10 +1,10 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Websocket;
+namespace Z1px\Http\Tests\Websocket;
 
 use Mockery as m;
-use SwooleTW\Http\Tests\TestCase;
-use SwooleTW\Http\Websocket\Pusher;
+use Z1px\Http\Tests\TestCase;
+use Z1px\Http\Websocket\Pusher;
 
 class PusherTest extends TestCase
 {

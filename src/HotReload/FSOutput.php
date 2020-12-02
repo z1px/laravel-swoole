@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\HotReload;
+namespace Z1px\Http\HotReload;
 
 /**
  * Class FSOutput
@@ -8,7 +8,7 @@ namespace SwooleTW\Http\HotReload;
 class FSOutput
 {
     /**
-     * @param \SwooleTW\Http\HotReload\FSEvent $event
+     * @param \Z1px\Http\HotReload\FSEvent $event
      *
      * @return string
      */

@@ -1,11 +1,11 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Transformers;
+namespace Z1px\Http\Tests\Transformers;
 
 use Illuminate\Http\Response as IlluminateResponse;
 use Swoole\Http\Response as SwooleResponse;
-use SwooleTW\Http\Tests\TestCase;
-use SwooleTW\Http\Transformers\Response;
+use Z1px\Http\Tests\TestCase;
+use Z1px\Http\Transformers\Response;
 
 class ResponseTest extends TestCase
 {

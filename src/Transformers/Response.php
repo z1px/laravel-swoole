@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Transformers;
+namespace Z1px\Http\Transformers;
 
 use Illuminate\Http\Response as IlluminateResponse;
 use Swoole\Http\Response as SwooleResponse;
@@ -28,7 +28,7 @@ class Response
      * @param $illuminateResponse
      * @param \Swoole\Http\Response $swooleResponse
      *
-     * @return \SwooleTW\Http\Transformers\Response
+     * @return \Z1px\Http\Transformers\Response
      */
     public static function make($illuminateResponse, SwooleResponse $swooleResponse)
     {
@@ -143,7 +143,7 @@ class Response
     /**
      * @param \Swoole\Http\Response $swooleResponse
      *
-     * @return \SwooleTW\Http\Transformers\Response
+     * @return \Z1px\Http\Transformers\Response
      */
     protected function setSwooleResponse(SwooleResponse $swooleResponse)
     {
@@ -163,7 +163,7 @@ class Response
     /**
      * @param mixed illuminateResponse
      *
-     * @return \SwooleTW\Http\Transformers\Response
+     * @return \Z1px\Http\Transformers\Response
      */
     protected function setIlluminateResponse($illuminateResponse)
     {

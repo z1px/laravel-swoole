@@ -1,12 +1,12 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Websocket;
+namespace Z1px\Http\Tests\Websocket;
 
 use Mockery as m;
 use Swoole\Http\Request;
 use Swoole\Http\Response;
-use SwooleTW\Http\Tests\TestCase;
-use SwooleTW\Http\Websocket\HandShakeHandler;
+use Z1px\Http\Tests\TestCase;
+use Z1px\Http\Websocket\HandShakeHandler;
 
 class HandShakeHandlerTest extends TestCase
 {

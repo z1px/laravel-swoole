@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Websocket\Facades;
+namespace Z1px\Http\Websocket\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -32,7 +32,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static string getUserId()
  * @method static boolean isUserIdOnline($userId)
  *
- * @see \SwooleTW\Http\Websocket\Websocket
+ * @see \Z1px\Http\Websocket\Websocket
  */
 class Websocket extends Facade
 {

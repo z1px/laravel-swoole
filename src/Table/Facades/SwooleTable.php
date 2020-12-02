@@ -1,15 +1,15 @@
 <?php
 
-namespace SwooleTW\Http\Table\Facades;
+namespace Z1px\Http\Table\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static \SwooleTW\Http\Table\SwooleTable add($name, $table)
+ * @method static \Z1px\Http\Table\SwooleTable add($name, $table)
  * @method static \Swoole\Table get($name)
  * @method static array getAll()
  *
- * @see \SwooleTW\Http\Table\SwooleTable
+ * @see \Z1px\Http\Table\SwooleTable
  */
 class SwooleTable extends Facade
 {

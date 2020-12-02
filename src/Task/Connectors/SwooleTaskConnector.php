@@ -1,10 +1,10 @@
 <?php
 
-namespace SwooleTW\Http\Task\Connectors;
+namespace Z1px\Http\Task\Connectors;
 
 use Illuminate\Queue\Connectors\ConnectorInterface;
-use SwooleTW\Http\Helpers\FW;
-use SwooleTW\Http\Task\QueueFactory;
+use Z1px\Http\Helpers\FW;
+use Z1px\Http\Task\QueueFactory;
 
 /**
  * Class SwooleTaskConnector

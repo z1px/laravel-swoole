@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Websocket\Rooms;
+namespace Z1px\Http\Websocket\Rooms;
 
 use Illuminate\Support\Arr;
 use Predis\Client as RedisClient;
@@ -39,7 +39,7 @@ class RedisRoom implements RoomContract
     /**
      * @param \Predis\Client|null $redis
      *
-     * @return \SwooleTW\Http\Websocket\Rooms\RoomContract
+     * @return \Z1px\Http\Websocket\Rooms\RoomContract
      */
     public function prepare(RedisClient $redis = null): RoomContract
     {

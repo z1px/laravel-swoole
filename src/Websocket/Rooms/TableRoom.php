@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Websocket\Rooms;
+namespace Z1px\Http\Websocket\Rooms;
 
 use Swoole\Table;
 
@@ -34,7 +34,7 @@ class TableRoom implements RoomContract
     /**
      * Do some init stuffs before workers started.
      *
-     * @return \SwooleTW\Http\Websocket\Rooms\RoomContract
+     * @return \Z1px\Http\Websocket\Rooms\RoomContract
      */
     public function prepare(): RoomContract
     {
@@ -126,7 +126,7 @@ class TableRoom implements RoomContract
      * @param string $room
      * @param array $fds
      *
-     * @return \SwooleTW\Http\Websocket\Rooms\TableRoom
+     * @return \Z1px\Http\Websocket\Rooms\TableRoom
      */
     protected function setClients(string $room, array $fds): TableRoom
     {
@@ -137,7 +137,7 @@ class TableRoom implements RoomContract
      * @param int $fd
      * @param array $rooms
      *
-     * @return \SwooleTW\Http\Websocket\Rooms\TableRoom
+     * @return \Z1px\Http\Websocket\Rooms\TableRoom
      */
     protected function setRooms(int $fd, array $rooms): TableRoom
     {

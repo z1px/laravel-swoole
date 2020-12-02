@@ -1,9 +1,9 @@
 <?php
 
-namespace SwooleTW\Http\Websocket\SocketIO;
+namespace Z1px\Http\Websocket\SocketIO;
 
-use SwooleTW\Http\Websocket\Parser;
-use SwooleTW\Http\Websocket\SocketIO\Strategies\HeartbeatStrategy;
+use Z1px\Http\Websocket\Parser;
+use Z1px\Http\Websocket\SocketIO\Strategies\HeartbeatStrategy;
 
 /**
  * Class SocketIOParser

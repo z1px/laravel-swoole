@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Controllers;
+namespace Z1px\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;

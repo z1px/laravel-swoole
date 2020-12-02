@@ -1,10 +1,10 @@
 <?php
 
-namespace SwooleTW\Http\Middleware;
+namespace Z1px\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use SwooleTW\Http\Server\AccessOutput;
+use Z1px\Http\Server\AccessOutput;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
@@ -15,14 +15,14 @@ use Symfony\Component\HttpFoundation\Response;
 class AccessLog
 {
     /**
-     * @var \SwooleTW\Http\Server\AccessOutput
+     * @var \Z1px\Http\Server\AccessOutput
      */
     protected $output;
 
     /**
      * AccessLog constructor.
      *
-     * @param \SwooleTW\Http\Server\AccessOutput $output
+     * @param \Z1px\Http\Server\AccessOutput $output
      */
     public function __construct(AccessOutput $output)
     {

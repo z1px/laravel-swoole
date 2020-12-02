@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Server\Facades;
+namespace Z1px\Http\Server\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static void disable()
  * @method static void setInstance($app)
  *
- * @see \SwooleTW\Http\Server\Sandbox
+ * @see \Z1px\Http\Server\Sandbox
  */
 class Sandbox extends Facade
 {

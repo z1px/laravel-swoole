@@ -1,8 +1,8 @@
 <?php
 
-namespace SwooleTW\Http\Websocket;
+namespace Z1px\Http\Websocket;
 
-use SwooleTW\Http\Server\Facades\Server;
+use Z1px\Http\Server\Facades\Server;
 
 /**
  * Class Pusher
@@ -88,7 +88,7 @@ class Pusher
      * @param array $data
      * @param \Swoole\Websocket\Server $server
      *
-     * @return \SwooleTW\Http\Websocket\Pusher
+     * @return \Z1px\Http\Websocket\Pusher
      */
     public static function make(array $data, $server)
     {

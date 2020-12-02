@@ -1,9 +1,9 @@
 <?php
 
-namespace SwooleTW\Http\Concerns;
+namespace Z1px\Http\Concerns;
 
 use Swoole\Table;
-use SwooleTW\Http\Table\SwooleTable;
+use Z1px\Http\Table\SwooleTable;
 
 trait InteractsWithSwooleQueue
 {

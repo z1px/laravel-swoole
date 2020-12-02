@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Websocket\Rooms;
+namespace Z1px\Http\Websocket\Rooms;
 
 interface RoomContract
 {
@@ -21,7 +21,7 @@ interface RoomContract
     /**
      * Do some init stuffs before workers started.
      *
-     * @return \SwooleTW\Http\Websocket\Rooms\RoomContract
+     * @return \Z1px\Http\Websocket\Rooms\RoomContract
      */
     public function prepare(): RoomContract;
 

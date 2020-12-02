@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Websocket\SocketIO;
+namespace Z1px\Http\Websocket\SocketIO;
 
 /**
  * Class Packet

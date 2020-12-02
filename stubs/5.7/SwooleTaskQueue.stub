@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Task;
+namespace Z1px\Http\Task;
 
 use Exception;
 use Illuminate\Contracts\Queue\Queue as QueueContract;

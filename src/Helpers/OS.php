@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Helpers;
+namespace Z1px\Http\Helpers;
 
 use Illuminate\Support\Str;
 

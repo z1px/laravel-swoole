@@ -1,10 +1,10 @@
 <?php
 
-namespace SwooleTW\Http\Concerns;
+namespace Z1px\Http\Concerns;
 
 use Illuminate\Contracts\Console\Application as ConsoleApp;
 use Swoole\Table;
-use SwooleTW\Http\Table\SwooleTable;
+use Z1px\Http\Table\SwooleTable;
 
 /**
  * Trait InteractsWithSwooleTable
@@ -15,7 +15,7 @@ use SwooleTW\Http\Table\SwooleTable;
 trait InteractsWithSwooleTable
 {
     /**
-     * @var \SwooleTW\Http\Table\SwooleTable
+     * @var \Z1px\Http\Table\SwooleTable
      */
     protected $currentTable;
 

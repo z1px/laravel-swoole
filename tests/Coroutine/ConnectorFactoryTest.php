@@ -1,11 +1,11 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Coroutine;
+namespace Z1px\Http\Tests\Coroutine;
 
 use Illuminate\Support\Str;
-use SwooleTW\Http\Coroutine\Connectors\ConnectorFactory;
-use SwooleTW\Http\Helpers\FW;
-use SwooleTW\Http\Tests\TestCase;
+use Z1px\Http\Coroutine\Connectors\ConnectorFactory;
+use Z1px\Http\Helpers\FW;
+use Z1px\Http\Tests\TestCase;
 
 /**
  * Class ConnectorFactoryTest

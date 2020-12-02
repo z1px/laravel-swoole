@@ -1,15 +1,15 @@
 <?php
 
-namespace SwooleTW\Http\Tests\SocketIO;
+namespace Z1px\Http\Tests\SocketIO;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;
 use Mockery as m;
 use Swoole\Websocket\Frame;
-use SwooleTW\Http\Server\Facades\Server;
-use SwooleTW\Http\Tests\TestCase;
-use SwooleTW\Http\Websocket\SocketIO\WebsocketHandler;
+use Z1px\Http\Server\Facades\Server;
+use Z1px\Http\Tests\TestCase;
+use Z1px\Http\Websocket\SocketIO\WebsocketHandler;
 
 class WebsocketHandlerTest extends TestCase
 {
@@ -34,7 +34,7 @@ class WebsocketHandlerTest extends TestCase
             $jsonEncode = true;
 
             return '{foo: "bar"}';
-        }, 'SwooleTW\Http\Websocket\SocketIO');
+        }, 'Z1px\Http\Websocket\SocketIO');
 
         App::shouldReceive('make')
            ->with(Server::class)

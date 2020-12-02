@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Task;
+namespace Z1px\Http\Tests\Task;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;

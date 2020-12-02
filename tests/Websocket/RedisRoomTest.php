@@ -1,11 +1,11 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Websocket;
+namespace Z1px\Http\Tests\Websocket;
 
 use Mockery as m;
 use Predis\Client as RedisClient;
-use SwooleTW\Http\Tests\TestCase;
-use SwooleTW\Http\Websocket\Rooms\RedisRoom;
+use Z1px\Http\Tests\TestCase;
+use Z1px\Http\Websocket\Rooms\RedisRoom;
 
 class RedisRoomTest extends TestCase
 {

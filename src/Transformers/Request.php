@@ -1,12 +1,12 @@
 <?php
 
-namespace SwooleTW\Http\Transformers;
+namespace Z1px\Http\Transformers;
 
 use Illuminate\Http\Request as IlluminateRequest;
 use Illuminate\Http\Response as IlluminateResponse;
 use Swoole\Http\Request as SwooleRequest;
-use SwooleTW\Http\Helpers\FW;
-use SwooleTW\Http\Helpers\MimeType;
+use Z1px\Http\Helpers\FW;
+use Z1px\Http\Helpers\MimeType;
 use Symfony\Component\HttpFoundation\ParameterBag;
 use Symfony\Component\HttpFoundation\Request as SymfonyRequest;
 
@@ -37,7 +37,7 @@ class Request
      *
      * @param \Swoole\Http\Request $swooleRequest
      *
-     * @return \SwooleTW\Http\Transformers\Request
+     * @return \Z1px\Http\Transformers\Request
      */
     public static function make(SwooleRequest $swooleRequest)
     {

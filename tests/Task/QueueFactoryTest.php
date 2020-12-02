@@ -1,12 +1,12 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Task;
+namespace Z1px\Http\Tests\Task;
 
 use Illuminate\Support\Str;
 use Mockery as m;
-use SwooleTW\Http\Helpers\FW;
-use SwooleTW\Http\Task\QueueFactory;
-use SwooleTW\Http\Tests\TestCase;
+use Z1px\Http\Helpers\FW;
+use Z1px\Http\Task\QueueFactory;
+use Z1px\Http\Tests\TestCase;
 
 /**
  * Class QueueFactoryTest

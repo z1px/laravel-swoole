@@ -1,10 +1,10 @@
 <?php
 
-namespace SwooleTW\Http\Tests\HotReload;
+namespace Z1px\Http\Tests\HotReload;
 
 use Swoole\Process;
-use SwooleTW\Http\HotReload\FSProcess;
-use SwooleTW\Http\Tests\TestCase;
+use Z1px\Http\HotReload\FSProcess;
+use Z1px\Http\Tests\TestCase;
 
 /**
  * Class FSProcessTest

@@ -2,9 +2,9 @@
 
 require __DIR__.'/vendor/autoload.php';
 
-use SwooleTW\Http\Helpers\FW;
-use SwooleTW\Http\Task\QueueFactory;
-use SwooleTW\Http\Coroutine\Connectors\ConnectorFactory;
+use Z1px\Http\Helpers\FW;
+use Z1px\Http\Task\QueueFactory;
+use Z1px\Http\Coroutine\Connectors\ConnectorFactory;
 
 try {
     $framework = ucfirst(FW::current());

@@ -109,15 +109,15 @@ return [
     |--------------------------------------------------------------------------
     */
     'resetters' => [
-        SwooleTW\Http\Server\Resetters\ResetConfig::class,
-        SwooleTW\Http\Server\Resetters\ResetSession::class,
-        SwooleTW\Http\Server\Resetters\ResetCookie::class,
-        SwooleTW\Http\Server\Resetters\ClearInstances::class,
-        SwooleTW\Http\Server\Resetters\BindRequest::class,
-        SwooleTW\Http\Server\Resetters\RebindKernelContainer::class,
-        SwooleTW\Http\Server\Resetters\RebindRouterContainer::class,
-        SwooleTW\Http\Server\Resetters\RebindViewContainer::class,
-        SwooleTW\Http\Server\Resetters\ResetProviders::class,
+        Z1px\Http\Server\Resetters\ResetConfig::class,
+        Z1px\Http\Server\Resetters\ResetSession::class,
+        Z1px\Http\Server\Resetters\ResetCookie::class,
+        Z1px\Http\Server\Resetters\ClearInstances::class,
+        Z1px\Http\Server\Resetters\BindRequest::class,
+        Z1px\Http\Server\Resetters\RebindKernelContainer::class,
+        Z1px\Http\Server\Resetters\RebindRouterContainer::class,
+        Z1px\Http\Server\Resetters\RebindViewContainer::class,
+        Z1px\Http\Server\Resetters\ResetProviders::class,
     ],
 
     /*

@@ -1,12 +1,12 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Websocket\Middleware;
+namespace Z1px\Http\Tests\Websocket\Middleware;
 
 use Illuminate\Contracts\Auth\Factory as Auth;
 use Illuminate\Http\Request;
 use Mockery as m;
-use SwooleTW\Http\Tests\TestCase;
-use SwooleTW\Http\Websocket\Middleware\Authenticate;
+use Z1px\Http\Tests\TestCase;
+use Z1px\Http\Websocket\Middleware\Authenticate;
 
 class AuthenticateTest extends TestCase
 {

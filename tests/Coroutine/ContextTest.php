@@ -1,11 +1,11 @@
 <?php
 
-namespace SwooleTW\Http\Tests\Coroutine;
+namespace Z1px\Http\Tests\Coroutine;
 
 use Illuminate\Container\Container;
 use Mockery as m;
-use SwooleTW\Http\Coroutine\Context;
-use SwooleTW\Http\Tests\TestCase;
+use Z1px\Http\Coroutine\Context;
+use Z1px\Http\Tests\TestCase;
 use TypeError;
 
 class ContextTest extends TestCase

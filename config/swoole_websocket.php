@@ -7,7 +7,7 @@ return [
     | Replace this handler if you want to customize your websocket handler
     |--------------------------------------------------------------------------
     */
-    'handler' => SwooleTW\Http\Websocket\SocketIO\WebsocketHandler::class,
+    'handler' => Z1px\Http\Websocket\SocketIO\WebsocketHandler::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -15,7 +15,7 @@ return [
     | Replace it if you want to customize your websocket payload
     |--------------------------------------------------------------------------
     */
-    'parser' => SwooleTW\Http\Websocket\SocketIO\SocketIOParser::class,
+    'parser' => Z1px\Http\Websocket\SocketIO\SocketIOParser::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -30,9 +30,9 @@ return [
     |--------------------------------------------------------------------------
     */
     'middleware' => [
-        // SwooleTW\Http\Websocket\Middleware\DecryptCookies::class,
-        // SwooleTW\Http\Websocket\Middleware\StartSession::class,
-        // SwooleTW\Http\Websocket\Middleware\Authenticate::class,
+        // Z1px\Http\Websocket\Middleware\DecryptCookies::class,
+        // Z1px\Http\Websocket\Middleware\StartSession::class,
+        // Z1px\Http\Websocket\Middleware\Authenticate::class,
     ],
 
     /*
@@ -42,7 +42,7 @@ return [
     */
     'handshake' => [
         'enabled' => false,
-        'handler' => SwooleTW\Http\Websocket\HandShakeHandler::class,
+        'handler' => Z1px\Http\Websocket\HandShakeHandler::class,
     ],
 
     /*
@@ -72,8 +72,8 @@ return [
     |--------------------------------------------------------------------------
     */
     'drivers' => [
-        'table' => SwooleTW\Http\Websocket\Rooms\TableRoom::class,
-        'redis' => SwooleTW\Http\Websocket\Rooms\RedisRoom::class,
+        'table' => Z1px\Http\Websocket\Rooms\TableRoom::class,
+        'redis' => Z1px\Http\Websocket\Rooms\RedisRoom::class,
     ],
 
     /*

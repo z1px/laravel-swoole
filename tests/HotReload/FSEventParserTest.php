@@ -1,11 +1,11 @@
 <?php
 
-namespace SwooleTW\Http\Tests\HotReload;
+namespace Z1px\Http\Tests\HotReload;
 
 use Carbon\Carbon;
-use SwooleTW\Http\HotReload\FSEvent;
-use SwooleTW\Http\HotReload\FSEventParser;
-use SwooleTW\Http\Tests\TestCase;
+use Z1px\Http\HotReload\FSEvent;
+use Z1px\Http\HotReload\FSEventParser;
+use Z1px\Http\Tests\TestCase;
 
 /**
  * Class FSEventParserTest

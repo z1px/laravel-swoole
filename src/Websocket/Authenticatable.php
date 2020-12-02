@@ -1,6 +1,6 @@
 <?php
 
-namespace SwooleTW\Http\Websocket;
+namespace Z1px\Http\Websocket;
 
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use InvalidArgumentException;
@@ -8,7 +8,7 @@ use InvalidArgumentException;
 /**
  * Trait Authenticatable
  *
- * @property-read \SwooleTW\Http\Websocket\Rooms\RoomContract $room
+ * @property-read \Z1px\Http\Websocket\Rooms\RoomContract $room
  */
 trait Authenticatable
 {
@@ -57,7 +57,7 @@ trait Authenticatable
      *
      * @param $users
      *
-     * @return \SwooleTW\Http\Websocket\Authenticatable
+     * @return \Z1px\Http\Websocket\Authenticatable
      */
     public function toUser($users)
     {
@@ -77,7 +77,7 @@ trait Authenticatable
      *
      * @param $userIds
      *
-     * @return \SwooleTW\Http\Websocket\Authenticatable
+     * @return \Z1px\Http\Websocket\Authenticatable
      */
     public function toUserId($userIds)
     {

@@ -175,6 +175,7 @@ class Websocket
         }
 
         $payload = [
+            'opcode'    => Config::get('swoole_http.server.opcode', WEBSOCKET_OPCODE_BINARY),
             'sender'    => $this->sender,
             'fds'       => $fds,
             'broadcast' => $this->isBroadcast,

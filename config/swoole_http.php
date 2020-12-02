@@ -20,6 +20,7 @@ return [
         // Put `SWOOLE_SOCK_TCP | SWOOLE_SSL` if you want to enable SSL
         'socket_type' => SWOOLE_SOCK_TCP,
         'process_type' => SWOOLE_PROCESS,
+        'opcode' => WEBSOCKET_OPCODE_BINARY,
         'options' => [
             'pid_file' => env('SWOOLE_HTTP_PID_FILE', base_path('storage/logs/swoole_http.pid')),
             'log_file' => env('SWOOLE_HTTP_LOG_FILE', base_path('storage/logs/swoole_http.log')),

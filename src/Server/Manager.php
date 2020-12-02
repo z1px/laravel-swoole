@@ -7,6 +7,7 @@ use Throwable;
 use Swoole\Process;
 use Swoole\Server\Task;
 use Illuminate\Support\Str;
+use Z1px\Http\Concerns\WorkerTicks;
 use Z1px\Http\Helpers\OS;
 use Z1px\Http\Server\Sandbox;
 use Z1px\Http\Server\PidManager;
@@ -33,7 +34,8 @@ class Manager
     use InteractsWithWebsocket,
         InteractsWithSwooleTable,
         InteractsWithSwooleQueue,
-        WithApplication;
+        WithApplication,
+        WorkerTicks;
 
     /**
      * Container.
@@ -184,6 +186,9 @@ class Manager
 
         // bind after setting laravel app
         $this->bindToLaravelApp();
+
+        // add swoole timer
+        $server->taskworker && $this->workerStartTicks($server);
 
         // prepare websocket handler and routes
         if ($this->isServerWebsocket) {

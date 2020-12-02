@@ -135,4 +135,24 @@ return [
         //     ]
         // ],
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Define your swoole timer here.
+    |
+    | @see https://www.swoole.co.uk/docs/modules/swoole-timer
+    |--------------------------------------------------------------------------
+    */
+    'timer' => [
+        'enable' => true, // 启用Timer
+        'ticks'   => [ // 注册的定时任务类列表
+            [
+                // 'interval' => 3000, // 指定时间，单位毫秒
+                // 'job' => function(int $timer_id, ...$params) {}, // 时间到期后所执行的函数，必须是可以调用的
+                // 'data' => [], // 给执行函数传递数据【此参数也为可选参数】
+                // 'worker_id' => null, // 指定任务进程，不指定的话，默认最后一个task进程
+            ]
+        ],
+        'max_wait_time' => 5, // Reload时最大等待时间
+    ],
 ];

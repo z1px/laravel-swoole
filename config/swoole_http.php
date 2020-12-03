@@ -153,6 +153,5 @@ return [
                 // 'worker_id' => null, // 指定任务进程，不指定的话，默认最后一个task进程
             ]
         ],
-        'max_wait_time' => 5, // Reload时最大等待时间
     ],
 ];

@@ -52,14 +52,12 @@ class SwooleTask
      */
     public function fire()
     {
-        if (method_exists($this, 'resolveAndFire')) {
-            $this->resolveAndFire($this->payload);
-        } else {
-            [$class, $method] = JobName::parse($this->payload['job']);
+        [$class, $method] = JobName::parse($this->payload['job']);
 
-            ($this->resolve($class))->{$method}($this, $this->payload['data']);
-        }
+        is_array($this->payload['data']) || $this->payload['data'] = [$this->payload['data']];
+        ($this->resolve($class))->{$method}(...$this->payload['data']);
     }
+
 
     /**
      * Resolve the given class.

@@ -279,7 +279,7 @@ class Manager
                 $this->pushMessage($server, $data['data']);
             // push to task worker
             } elseif ($this->isTaskPayload($data)) {
-                (new SwooleTask($this->container, $server, $data))->fire();
+                (new SwooleTask($this->container, $server, $data['data']))->fire();
             // push async task to queue
             } elseif ($this->isAsyncTaskPayload($data)) {
                 (new SwooleTaskJob($this->container, $server, $data, $taskId, $srcWorkerId))->fire();
@@ -459,6 +459,6 @@ class Manager
 
         return $this->isServerWebsocket
             && ($payload['action'] ?? null) === Websocket::TASK_ACTION
-            && array_key_exists('job', $payload);
+            && array_key_exists('job', $payload['data']);
     }
 }

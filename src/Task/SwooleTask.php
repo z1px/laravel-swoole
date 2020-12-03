@@ -55,7 +55,7 @@ class SwooleTask
         [$class, $method] = JobName::parse($this->payload['job']);
 
         is_array($this->payload['data']) || $this->payload['data'] = [$this->payload['data']];
-        ($this->resolve($class))->{$method}(...$this->payload['data']);
+        ($this->resolve($class))->{$method}(...array_values($this->payload['data']));
     }
 
 

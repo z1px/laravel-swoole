@@ -252,7 +252,12 @@ class Websocket
 
         $result = true;
         $server = App::make(Server::class);
-        (new SwooleTask($this->container, $server, $payload))->fire();
+        if ($server->taskworker) {
+            $container = $this->container;
+        } else {
+            $container = new \Illuminate\Container\Container();
+        }
+        (new SwooleTask($container, $server, $payload))->fire();
 
         $this->reset();
 

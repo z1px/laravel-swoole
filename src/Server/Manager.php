@@ -11,6 +11,7 @@ use Z1px\Http\Concerns\WorkerTicks;
 use Z1px\Http\Helpers\OS;
 use Z1px\Http\Server\Sandbox;
 use Z1px\Http\Server\PidManager;
+use Z1px\Http\Task\SwooleTask;
 use Z1px\Http\Task\SwooleTaskJob;
 use Illuminate\Support\Facades\Facade;
 use Z1px\Http\Websocket\Websocket;
@@ -276,6 +277,9 @@ class Manager
             // push websocket message
             if ($this->isWebsocketPushPayload($data)) {
                 $this->pushMessage($server, $data['data']);
+            // push to task worker
+            } elseif ($this->isTaskPayload($data)) {
+                (new SwooleTask($this->container, $server, $data))->fire();
             // push async task to queue
             } elseif ($this->isAsyncTaskPayload($data)) {
                 (new SwooleTaskJob($this->container, $server, $data, $taskId, $srcWorkerId))->fire();
@@ -438,5 +442,23 @@ class Manager
         }
 
         return isset($data['job']);
+    }
+
+    /**
+     * Indicates if the payload is task worker.
+     *
+     * @param mixed $payload
+     *
+     * @return boolean
+     */
+    public function isTaskPayload($payload): bool
+    {
+        if (! is_array($payload)) {
+            return false;
+        }
+
+        return $this->isServerWebsocket
+            && ($payload['action'] ?? null) === Websocket::TASK_ACTION
+            && array_key_exists('job', $payload);
     }
 }

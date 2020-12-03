@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Config;
 use InvalidArgumentException;
 use Z1px\Http\Server\Facades\Server;
 use Z1px\Http\Server\Manager;
+use Z1px\Http\Task\SwooleTask;
 use Z1px\Http\Websocket\Rooms\RoomContract;
 
 /**
@@ -21,6 +22,7 @@ class Websocket
     const PUSH_ACTION = 'push';
     const EVENT_CONNECT = 'connect';
     const USER_PREFIX = 'uid_';
+    const TASK_ACTION = 'task';
 
     /**
      * Determine if to broadcast.
@@ -194,6 +196,63 @@ class Websocket
                 'data' => $payload
             ]);
         }
+
+        $this->reset();
+
+        return $result !== false;
+    }
+
+    /**
+     * Handle something on task worker and reset some status.
+     *
+     * @param
+     * @param mixed
+     *
+     * @return boolean
+     */
+    public function task($job, $data): bool
+    {
+        $payload = [
+            'sender'    => $this->sender,
+            'job'       => $job,
+            'data'      => $data,
+        ];
+
+        $result = true;
+        $server = App::make(Server::class);
+        if ($server->taskworker) {
+            (new SwooleTask($this->container, $server, $payload))->fire();
+        } else {
+            $result = $server->task([
+                'action' => static::TASK_ACTION,
+                'data' => $payload
+            ]);
+        }
+
+        $this->reset();
+
+        return $result !== false;
+    }
+
+    /**
+     * Handle something on current worker and reset some status.
+     *
+     * @param
+     * @param mixed
+     *
+     * @return boolean
+     */
+    public function work($job, $data): bool
+    {
+        $payload = [
+            'sender'    => $this->sender,
+            'job'       => $job,
+            'data'      => $data,
+        ];
+
+        $result = true;
+        $server = App::make(Server::class);
+        (new SwooleTask($this->container, $server, $payload))->fire();
 
         $this->reset();
 

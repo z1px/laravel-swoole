@@ -205,12 +205,13 @@ class Websocket
     /**
      * Handle something on task worker and reset some status.
      *
-     * @param
-     * @param mixed
-     *
-     * @return boolean
+     * @param      $job
+     * @param      $data
+     * @param null $worker_id
+     * @access
+     * @return bool
      */
-    public function task($job, $data): bool
+    public function task($job, $data, $worker_id = null): bool
     {
         $payload = [
             'sender'    => $this->sender,
@@ -226,7 +227,7 @@ class Websocket
             $result = $server->task([
                 'action' => static::TASK_ACTION,
                 'data' => $payload
-            ]);
+            ], is_null($worker_id) ? $server->worker_id : $worker_id);
         }
 
         $this->reset();
